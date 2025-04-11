@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+@theme {
+  --color-mocha: #4D342C;
+  --color-gray: #4C4C4C;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.gowun {
+  font-family: 'Gowun Batang', serif;
+}

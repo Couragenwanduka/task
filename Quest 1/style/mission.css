@@ -1,0 +1,223 @@
+.missionContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding-left: 74px;
+    padding-top: 50px;
+    padding-right: 10px;
+    gap: 20px;
+    height: 700px;
+    justify-content: center
+}
+.missionMain{
+    width: 60%;
+}
+.headerMission{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -1%;
+    /* font-family: 'Spoqa Han Sans'; */
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 5%;
+}
+.time{
+    color: #979797;
+    margin-bottom: 90px;
+    list-style: disc;
+
+}
+
+.missionSlideshowContainer {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 600px; 
+}
+
+.eventSlide {
+    animation: slideEffect 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.missionList{
+    color: #979797;
+    margin-bottom: 5px;
+    list-style-type: disc; 
+    padding-left: 1.5rem;
+}
+
+
+.eventSlide img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
+}
+.secondIcon{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes slideEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.prevMission, .nextMission{
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    /* pading: 10px; */
+    color: #000;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    /* transform: translateY(-50%); */
+    user-select: none;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.prevMission {
+    left: 10px;
+}
+
+.nextMission {
+    right: 10px;
+}
+.missionHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+}
+.secondMain{
+    width: 50%;
+}
+.colourHeader{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -1%;
+    /* font-family: 'Spoqa Han Sans'; */
+    color: #00427A;
+    width: 100%;
+}
+.colourText{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -1%;
+    font-family: 'Spoqa Han Sans';
+    color: #00427A;
+    width: 100%;
+    margin-top: 20px;
+}
+.thridMain{
+    display: flex ;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-top: 300px;
+    gap: 5px;
+}
+.iconContainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00427A;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    gap: 3px;
+    cursor: pointer;
+}
+.iconContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    gap: 3px;
+    border: #00427A 1px solid;
+    cursor: pointer;
+}
+
+.iconImage{
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.iconText{
+    font-size: 12px;
+    color: white;
+}
+.iconText2{
+    font-size: 12px;
+    color: #00427A;
+}
+
+@media (max-width: 640px) {
+    .missionContainer {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 20px;
+    }
+  
+    .missionMain{
+      width: 95%; /* First card full width */
+    }
+  
+    .secondMain{
+      width: 70%;
+      margin-top: -250px;
+    }
+    
+    .thridMain{
+        display: flex ;
+        flex-direction: column;
+        justify-content: baseline;
+        margin-top: -280px;
+        gap: 5px;
+        width: 20%;
+    }
+    .prevMission, .nextMission{
+        cursor: pointer;
+        position: absolute;
+        top: 16%;
+        /* pading: 10px; */
+        color: #000;
+        font-size: 2rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        /* transform: translateY(-50%); */
+        user-select: none;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+  }

@@ -1,0 +1,121 @@
+.coreSection{
+    background-color: white;
+    padding: 75px;
+}
+.coreSection>h1{
+    color:black;
+    font-family: 'SpoqaHanSans';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1%;
+    margin-bottom: 20px;
+}
+
+.coreText{
+    color:black;
+    font-family: 'SpoqaHanSans';
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.coreText2{
+    color:#575757;
+    font-family: 'SpoqaHanSans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -1%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    word-break: break-all;
+    width: 60%;
+}
+.coreText3{
+    color:black;
+    font-family: 'SpoqaHanSans';
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 140px;
+}
+
+.coreImage{
+    width: 60%;
+}
+.coreDiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+    .coreSection{
+        background-color: white;
+        padding: 15px;
+    }
+    .coreSection>h1{
+        color:black;
+        font-family: 'SpoqaHanSans';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -1%;
+        margin-bottom: 20px;
+    }
+    .coreText{
+        color:black;
+        font-family: 'SpoqaHanSans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -1%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .coreText2{
+        color:#575757;
+        font-family: 'SpoqaHanSans';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -1%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        word-break: break-all;
+        width: 100%;
+    }
+    .coreText3{
+        color:black;
+        font-family: 'SpoqaHanSans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -1%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        /* width: 100%; */
+    }
+    
+    .coreImage{
+        width: 100%;
+    }
+    .coreDiv2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: ; */
+        /* align-items: flex-end; */
+    }
+}

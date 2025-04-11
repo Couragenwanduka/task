@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/feature.css">
+    <link rel="stylesheet" href="style/service.css">
+    <link rel="stylesheet" href="style/mission.css">
+    <link rel="stylesheet" href="style/center.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <!-- Favicon for general browsers -->
+    <link rel="icon" href="/assets/icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="navContainer">
+          <a href="home.html">
+            <img src="assets/icon/logo.png" alt="Logo Image" class="logo" loading="lazy"/>
+          </a>
+
+            <button class="hamburger" id="hamburger">
+                <img src="assets/icon/menu.png" alt="Menu"  class="hamburgerImage" loading="lazy" />
+            </button>
+
+            <div class="navLinks" id="navLinks">
+                <button class="closeBtn" id="closeBtn">
+                   X
+                  </button>
+                <ul class="list">
+                  <li  href="main.html" class="listItem">센터원</li>
+                  <li  href="main.html" class="listItem">이용안내</li>
+                  <li  href="main.html" class="listItem">서비스소개</li>
+                  <li  href="main.html" class="listItem">임대문의</li>
+                  <li  href="main.html" class="listItem">고객지원</li>
+                  <!-- <li href="main.html" class="">MainPage</li> -->
+                </ul>
+             </div>
+              
+            <a href="main.html">
+                <img src="assets/icon/worldIcon.png" alt="World Image" class="worldIcon" loading="lazy"/>
+            </a>
+        </nav>
+    </header>
+    <!-- Background Image and Text it contains both desktop and mobile -->
+    <section class="hero-section">
+        <img src="assets/Background.png" alt="Background Image" class="background" loading="lazy"/>
+        <img src="assets/backgroundMobile.png" alt="Background Image" class="backgroundMobile" loading="lazy"/>
+        <img src="assets/icon/heroText.png" alt="Hero Text" class="heroText" loading="lazy"/>
+        <img src="assets/icon/heroTextMobile.png" alt="Hero Text" class="heroTextMobile" loading="lazy"/>
+    </section>    
+
+    <section class="aboutContainer">
+        <h1 class="aboutText1">Convenience</h1>
+        <span class="aboutTextContainer">
+             <p class="aboutText2">미래에셋센터원에서 경험하는</p>
+             <p class="aboutText3">특별한 서비스</p>
+        </span>
+      <div class="slideContainer">
+            <div class="slide1">
+                <img src="assets/aboutImage.png" class="slideImage"/>
+                <div>
+                    <h2 class="aboutMainText">KF GALLERY</h2>
+                    <p class="aboutParagraphy">국내외 방문객에게 전시회, 문화 행사, 교육 프로그램 등 개최 국제 교류를 촉진하는 다양한 전시와 행사에 참여해보세요.</p>
+                </div>
+                <div class="aboutDesignContainer">
+                    <span class="aboutDesign1"></span>
+                    <span class="aboutDesign2"></span>
+                </div>
+            </div>
+            <div class="slide2">
+                <img src="assets/aboutImage2.png" class="slideImage"/>
+                <div>
+                    <h2 class="aboutMainText">센터원 Wellness</h2>
+                    <p class="aboutParagraphy">피트니스, 골프GDR+, 필라테스, GX,스피닝, 사우나, PT(퍼스널트레이닝) 등 운영 바쁜 일상과 업무에서 잠시 휴식을 취해보세요.</p>
+                </div>
+                <div class="aboutDesignContainer">
+                    <span class="aboutDesign3"></span>
+                    <span class="aboutDesign4"></span>
+                </div>
+            </div>
+            <div class="slide3">
+                <img src="assets/aboutImage3.png" class="slideImage"/>
+                <div>
+                    <h2 class="aboutMainText">SPARKPLUS</h2>
+                    <p class="aboutParagraphy">원하는 인원만큼 사용할 수 있는 맞춤형 오피스 일에만 집중할 수 있는 완벽한 공유 오피스를 만나보세요..</p>
+                </div>
+                <div class="aboutDesignContainer">
+                    <span class="aboutDesign5"></span>
+                    <span class="aboutDesign6"></span>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- This is the Feature Section  -->
+    <section class="slideshow-container">
+        <div class="slide fade">
+          <img src="assets/Feature1.png" alt="Feature Image" />
+        </div>
+        <div class="slide fade">
+          <img src="assets/Feature2.png" alt="Feature Image" />
+        </div>
+        <div class="slide fade">
+          <img src="assets/Feature3.png" alt="Feature Image" />
+        </div>
+        <div class="slide fade">
+          <img src="assets/Feature4.png" alt="Feature Image" />
+        </div>
+      
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </section>
+
+    <!-- This is the service section it's very similar to the about section so i would be using the same code and styling with some minor changes -->
+    <section class="aboutContainer">
+        <div class="centerContainer">
+            <h1 class="serviceText">ONLY </h1>
+            <img src="assets/icon/logo (1).png" class="centerImage"/>
+        </div>
+        
+        <span class="aboutTextContainer">
+             <p class="aboutText2">미래에셋센터원에서만 누리는</p>
+             <p class="aboutText3">특별한 혜택</p>
+        </span>
+      <div class="slideContainer">
+            <div class="seriveSlide1">
+                <img src="assets/serviceImage1.png" class="slideImage"/>
+                <div>
+                    <h2 class="aboutMainText">프라임 서비스</h2>
+                    <p class="aboutParagraphy">임산부 휴게실/수유실 운영, 세차 서비스, 우편 배달 서비스 등입주사 임직원을 위한 차별화된 서비스를 제공합니다.</p>
+                </div>
+            </div>
+            <div class="seriveSlide2">
+                <img src="assets/serviceImage2.png" class="slideImage"/>
+                <div>
+                    <h2 class="aboutMainText">E-pit 전기차 충전소</h2>
+                    <p class="aboutParagraphy">미래에셋센터원 주차장에는 전기차 이용자들을 위해일반 충전소 외에도 E-pit 전기차 충전소가 마련되어 있습니다.</p>
+                </div>
+            </div>
+            <div class="seriveSlide3">
+                <img src="assets/serviceImage3.png" class="slideImage"/>
+                <div>
+                    <h2 class="aboutMainText">주차요금 할인</h2>
+                    <p class="aboutParagraphy">오피스,에비뉴 방문시 주차할인 혜택을 드리며 주말에는 최대 8천원으로 부담없이 미래에셋센터원을 즐길 수 있습니다.</p>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- this is the Mission section -->
+    <section class="missionContainer" >
+        <div class="missionMain">
+            <div class="missionHeader">
+                <h1>지금 살펴봐야할 이벤트</h1>
+                <img src="assets/icon/Icon (1).svg" class="secondIcon"/>
+            </div>
+            <div class="missionSlideshowContainer">
+                <div class="eventSlide slideEffect">
+                    <img src="assets/missionImage.png" alt="Mission Image"/>
+                    <div class="textContainer">
+                        <h1 class="headerMission">미래에셋센터원 크리스마스 작은 음악회</h1>
+                        <ul class="missionList">
+                            <li>공연 주제 : 재즈 공연</li>
+                            <li>장소 : 1층 계단 앞(연주), 1층 크리스마스 트리 앞(다과 및 커피 배포)</li>
+                        </ul>
+                        <p class="time">2024.12.20(금)~2024.12.20(금)</p>
+                    </div>
+                </div>
+                <div class="eventSlide slideEffect">
+                    <img src="assets/missionImage2.png" alt="Mission image"/>
+                    <div class="textContainer">
+                        <p class="headerMission">가정의 달 EVENT</p>
+                        <ul class="missionList">
+                            <li>판매상품: 와인 및 꽃박스 </li>
+                            <li>토브의 카네이션은 행사 기간 동안 50개 판매 (한정판매)</li>
+                        </ul>
+                        <p class="time">2024.05.07(화)~2024.05.08(목)</p>
+                    </div>
+                </div>
+                 <!-- Navigation arrows -->
+                <a class="prevMission" onclick="plusSlides(-1)">❮</a>
+                <a class="nextMission" onclick="plusSlides(1)">❯</a>
+            </div>
+        </div>
+        <div class="secondMain">
+            <div class="missionHeader">
+                <h3>센터원 소식</h3>
+                <img src="assets/icon/Icon (1).svg" class="secondIcon"/>
+            </div>
+            <h1 class="colourHeader">미래에셋센터원 홈페이지 리뉴얼 안내</h1>
+            <p class="colourText">미래에셋센터원 공식 홈페이지가 리뉴얼 오픈했습니다. 더 나은 서비스 제공을 위해 불편한...</p>
+            <p class="colourText">2024.09.04(수)</p>
+        </div>
+        <div class="thridMain">
+            <div class="iconContainer1">
+                <img src="assets/icon/icon-quick-menu.svg" alt="audioImage" class="iconImage"/>
+                <p class="iconText">주요문의처</p>
+            </div>
+            <div class="iconContainer2">
+                <img src="assets/icon/icon-quick-menu (1).svg" alt="audioImage" class="iconImage"/>
+                <p class="iconText2">임대문의</p>
+            </div>
+            <div class="iconContainer2">
+                <img src="assets/icon/Icon.svg" alt="audioImage" class="iconImage"/>
+                <p class="iconText2">임대문의</p>
+            </div>
+            <div class="iconContainer2">
+                <img src="assets/icon/Frame 1261159650.svg" alt="audioImage" class="iconImage"/>
+                <p class="iconText2">임대문의</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- This is the center Section -->
+    <section>
+            <div class="centerDesignContainer">
+                <div>
+                    <img src="assets/Frame 2067.svg" alt="Design" class="centerDesign"/>
+                    <img src="assets/Frame 2068 (1).svg" alt="Design" class="centerDesignMobile"/>
+                </div>
+                <div class="centerTextImage">
+                    <div>
+                        <img src="assets/icon/logo (1).png" class="centerCenter"/>
+                    </div>
+                    <div class="centerTextContainer">
+                        <p class="centerText2">미래에셋센터원</p>
+                        <p class="centerText3">AVENUE</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/Frame 2068.svg" alt="Design" class="centerDesign"/>
+                        <img src="assets/Frame 2068 (1).svg" alt="Design" class="centerDesignMobile"/>
+                    </div>  
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                  <div class="carousel-slide"><img src="assets/Frame 1261159615.svg" alt="Slide" loading="lazy" /></div>
+                  <div class="carousel-slide"><img src="assets/Frame 1261159616.svg" alt="Slide" loading="lazy" /></div>
+                  <div class="carousel-slide"><img src="assets/Frame 1261159621.svg" alt="Slide" loading="lazy" /></div>
+                  <div class="carousel-slide"><img src="assets/Frame 1261159617.svg" alt="Slide" loading="lazy" /></div>
+                  <div class="carousel-slide"><img src="assets/Frame 1261159618.svg" alt="Slide" loading="lazy" /></div>
+                  <div class="carousel-slide"><img src="assets/Frame 1261159619.svg" alt="Slide" loading="lazy" /></div>
+                  <div class="carousel-slide"><img src="assets/Frame 1261159620.svg" alt="Slide" loading="lazy" /></div>
+                </div>
+              </div>
+              
+    </section>
+
+    <section>
+        <img src="assets/Frame 1261159289.svg" alt="section Image" style="width: 100%; height: auto; display: block;"/>
+    </section>
+
+    <section class="footerMainContainer">
+        <div class="footerSecondContainer">
+             <div>
+                <h1 class="footerMainText">Mirae Asset Center1</h1>
+                <div class="hideDesktop">
+                    <p class="footerSecondText">주소 : 서울특별시 중구 수하동 67 미래에셋 센터원 ( 서울특별시 중구 을지로 5길 26 )</p>
+                    <p class="footerSecondText">대표번호 : 02-6030-0100</p>
+                </div>
+             </div>
+             <div class="footerRightContainer">
+                <p class="footerSecondText2">개인정보처리방침</p>
+                <div class="bottonContainer">
+                    <button class="button1">
+                        <p>FAMILY SITE</p>
+                        <p>&#9660;</p>
+                    </button>
+                    <button class="button2">
+                        미래에셋
+                    </button>
+                </div>
+             </div>
+        </div>
+        <div>
+            <div class="hideMobile">
+                <p class="footerSecondText">주소 : 서울특별시 중구 수하동 67 미래에셋 센터원 ( 서울특별시 중구 을지로 5길 26 )</p>
+                <p class="footerSecondText">대표번호 : 02-6030-0100</p>
+            </div>
+            <p class="footerSecondText2">COPYRIGHT(C) 2011 MIRAE ASSET COPORATION. CO., Ltd. ALL RIGHT RESERVED.</p>
+        </div>
+    </section>
+
+    <script src="javascript/index.js"></script>
+    <script src="javascript/animation.js"></script>
+    <script src="javascript/slideShow.js"></script>
+    <script src="javascript/missionSlideshow.js"></script>
+    <script src="javascript/carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+.footerMainContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 74px;
+}
+.footerSecondContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 200px;
+}
+.footerMainText{
+    font-size: 28px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: white;
+}
+.footerSecondText{
+    font-size: 18px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: white;
+    margin-top: 10px;
+}
+.footerSecondText2{
+    font-size: 16px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: white;
+    margin-top: 10px;
+}
+.footerRightContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.bottonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button1{
+    display: flex;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    gap: 5px;
+    color: white;
+    font-family: 'Spoqa Han Sans';
+    outline: none;
+}
+.button2{
+    display: flex;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid white;
+    gap: 5px;
+    color: white;
+    font-family: 'Spoqa Han Sans';
+    outline: none;
+}
+.hideMobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hideMobile{
+        display: block;
+    }
+    .hideDesktop{
+        display: none;
+    }
+    .footerMainContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footerMainText{
+        font-size: 16px;
+        font-family: 'Spoqa Han Sans';
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: white;
+        margin-top: 5px;
+    }
+    .footerSecondText{
+        font-size: 12px;
+        font-family: 'Spoqa Han Sans';
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: white;
+        margin-top: 10px;
+    }
+    .footerSecondText2{
+        font-size: 12px;
+        font-family: 'Spoqa Han Sans';
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: white;
+        margin-top: 10px;
+    }
+}

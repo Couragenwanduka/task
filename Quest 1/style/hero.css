@@ -1,0 +1,254 @@
+
+  
+  /* =======================
+     Header and Navigation
+  ========================= */
+  
+  .header {
+    position: fixed; /* Fix the header at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    z-index: 10; /* Stay on top of other elements */
+  }
+  .header.scrolled {
+    background-color: rgba(36, 36, 36, 0.9); /* Dark bg with transparency */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Navigation list */
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .listItem {
+    display: inline;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  /* World icon */
+  .worldIcon {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* =======================
+     Hero Section
+  ========================= */
+  
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .background {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .backgroundMobile {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .heroText {
+    position: absolute;
+    top: 4%;
+    left: -3%;
+    width: 90%;
+  }
+
+  .backgroundTextContainer{
+    position: absolute;
+    top: 35%;
+    left: 6%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .backgroundTextContainer> h1{
+    color: white;
+    font-family: 'SpoqaHanSans';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: -1%;
+    /* word-break: break-all;
+    width: 60%; */
+  }
+
+  .backgroundTextContainer>div>h1{
+      color: white;
+      margin-top: 250px;
+  }
+  
+  .heroTextMobile {
+    display: none;
+  }
+  
+  /* =======================
+     Buttons
+  ========================= */
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .closeBtn {
+    display: none;
+  }
+  
+  /* =======================
+     Responsive (Mobile)
+  ========================= */
+  
+  @media screen and (max-width: 768px) {
+    .navContainer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1px;
+      /* padding-right: -90px; */
+    }
+  
+    .logo {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-left: 210px;
+    }
+  
+    .hamburgerImage {
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+    }
+  
+    .background {
+      display: none;
+    }
+  
+    .backgroundMobile {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    .heroText {
+      display: none;
+    }
+  
+    .heroTextMobile {
+      display: block;
+      position: absolute;
+      top: 60%;
+      left: 5%;
+      width: 80%;
+    }
+  
+    /* Dropdown Navigation */
+    .navLinks {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #242424;
+      z-index: 9;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out;
+      padding-top: 80px; /* Space for logo/hamburger */
+    }
+  
+    .navLinks.active {
+      transform: translateY(0);
+    }
+  
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+  
+    .listItem {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      color: white;
+    }
+  
+    .worldIcon {
+      display: none;
+    }
+  
+    .closeBtn {
+      font-size: 1.5rem;
+      color: black;
+      border: none;
+      background-color: transparent;
+      margin-left: 10px;
+      cursor: pointer;
+      display: block;
+    }
+
+    .backgroundTextContainer> h1{
+      color: white;
+      font-family: 'SpoqaHanSans';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: -1%;
+      text-align: center;
+      /* word-break: break-all;
+      width: 60%; */
+    }
+  }
+  
